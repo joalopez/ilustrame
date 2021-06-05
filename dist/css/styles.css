@@ -77,7 +77,7 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
   font-family: 'inter', sans-serif;
 
@@ -86,7 +86,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 h1, .h1 {
   font-family: 'Inter', sans-serif !important;
   font-size: calc(1.4rem + 1.5vw);
-  font-weight: 800;
+  font-weight: 600 !important;
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -10943,4 +10943,72 @@ html {
 .link::before {
   content: '';
   /* show by default */
+}
+
+.texto-degrade{
+  background: -webkit-linear-gradient(45deg, #fca1c0, #ffe090);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* styles reset */
+.card {
+  border:0;
+  padding-top: 2%;
+  
+}
+
+
+/* card group aka PRIMARY */
+.card-group .card-primary:hover {
+  box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
+  z-index: 100;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.card-group .card-primary:hover .card-title{
+  color: #4e22d0 !important;
+  background: -webkit-linear-gradient(45deg, #fca1c0, #ffe090);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-group .card-primary .card-img-top{
+  width:264px;
+  height:264px;
+  margin: 80px auto 32px;
+}
+.card-group .card-primary .card-body > .badge {
+  margin-bottom: 24px;
+}
+.card-group .card-primary .card-body {
+  padding: 0 32px;
+}
+.card-group .card-primary .card-title {
+  color: #261c6a;
+  font-size: 26px;
+  line-height: 1.54;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.card-group .card-primary .card-text {
+  color: #261c6a;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.card-group .card-primary .card-footer {
+  padding: 48px 0 56px;
+  background: transparent;
+  border:0;
+}
+
+
+/* card deck aka SECONDARY */
+
+.card-deck .card-secondary {
+  padding: 32px 32px 0;
+  margin: 16px;
+  border-radius: 0;
 }
